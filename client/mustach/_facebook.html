@@ -1,0 +1,65 @@
+<!-- ============ -->
+<!-- = Facebook = -->
+<!-- ============ -->
+
+<script id="fb.modal.template" type="text/x-jquery-tmpl">
+ <div id="modal">
+     <!--<nav>
+       <a href="javascript:;" class="active">Los!</a>
+       <a href="javascript:;">about</a>
+     </nav>-->
+     <h3></h3>
+     <section></section>
+ </div>
+</script>
+
+
+<script id="fb.start.template" type="text/x-jquery-tmpl">
+ <h3 id="head_title"><span>Map</span>pus - deine Freunde auf einer Karte</h3>
+ <hr />
+ <div class="content">
+   <p>
+     Mappus zeigt dir wo deine Facebook Freunde wohnen.<br/><br/>
+     Schonmal Reisepläne gemacht und überlegt wen man auf der Strecke besuchen könnte? Mal Konzerttickets geordert und einen Schlafplatz gesucht? Mappus hilft dabei wahrscheinlich nicht viel, aber es ist hilfreich zu wissen wer wo wohnt. <br/>
+     <hr/>
+     <b>Verbinde Mappus mit Facebook und finde deine Freunde:</b>
+     <br /><br />
+     <div style="text-align:center;">
+       <img id="facebook_connect_button" src="image/facebook_connect.gif" alt="facebook connect" class="button"/>
+     </div>
+     <br />
+     <hr />
+     <small>Weitere Informationen findest du bei den <a href="options/index.html" target="_blank">Einstellungen</a>.
+   </p>
+ </div>
+</script>
+
+<script id="fb.loading.template" type="text/x-jquery-tmpl">
+ <div>
+   Wird geladen
+   <img src="image/loadinfo.net.gif" alt="loading" class="loading"/>  
+ </div>
+</script>
+
+<script id="fb.results.template" type="text/x-jquery-tmpl">
+ <p>
+   <span><b>{{all_friends}}</b> Freunde &nbsp; </span>
+   <span><b>{{with_address}}</b> Freunde mit Adresse &nbsp; </span>
+   <span><b>{{all_addresses}}</b> Adressen gesamt &nbsp; </span>
+ </p>
+
+ <fieldset class="large" id="form">
+   <span class="input">
+     <input type="checkbox" id="home" checked value="home" /> 
+     <label for="home">Heimatort</label>
+   </span>
+   <span class="input">
+     <input type="checkbox" id="current" checked value="current" /> 
+     <label for="current">Aktueller Wohnort</label>
+   </span>
+   <br/>
+   der Freunde auf der Karte anzeigen
+ </fieldset>
+
+ <a href="javascript:;" class="big">Anzeigen</a>
+</script>

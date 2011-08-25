@@ -1,0 +1,119 @@
+
+h1 {margin:10px 0 10px 0; font-size:1.8em;}
+
+.hidden {
+    display: none;
+}
+
+ 
+#progress {
+    position: absolute;
+    width: 200px;
+    height:20px;
+    left:50%; top:40%;
+    margin:-10px 0 0 -100px;
+    
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    border-radius:10px;
+    -webkit-box-shadow: 0px 5px 30px #888; padding: 30px;
+    -moz-box-shadow: 0px 5px 30px #888; 
+    box-shadow: 0px 5px 30px #888; 
+    text-align: center;
+    /*background-image: url('http://www.bing.com/fd/hpk2/BluestripeSnappers_DE-DE3161759250.jpg');*/background-position:100% 30%;
+}
+#progress img {margin-bottom:-2px;}
+#progress span {color: #AAA; -webkit-opacity:0.5;-moz-opacity:0.5;opacity:0.5; margin-left:5px;}
+
+
+
+#loading {
+    display: block;
+    position: absolute;
+    top:0px;
+    left:0px;
+    -webkit-transform: translate(-30px, -30px);
+    z-index:500;
+    background: white;
+    -webkit-border-bottom-right-radius: 20px;
+    padding: 2px 3px 0px 2px;
+    border: 1px solid #ddd;
+    border-left-width:0;
+    border-top-width:0;
+    -webkit-box-shadow: inset -1px -1px 1px rgba(50, 50, 50, 0.1);
+    -webkit-transition: all .5s ease-in-out 0s;
+}
+
+#loading .spinner {
+    width: 30px;
+    height: 30px;
+    position: relative;
+}
+
+body.loading #loading {
+    -webkit-transform: translate(0px, 0px);
+}
+
+/* start basic spinner styles*/
+
+div.spinner {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+}
+
+div.spinner div {
+  width: 12%;
+  height: 26%;
+  background: #000;
+  position: absolute;
+  left: 44.5%;
+  top: 37%;
+  opacity: 0;
+  -webkit-animation: fade 1s linear infinite;
+  -webkit-border-radius: 50px;
+  -webkit-box-shadow: 0 0 3px rgba(0,0,0,0.2);
+}
+
+div.spinner div.bar1 {-webkit-transform:rotate(0deg) translate(0, -142%); -webkit-animation-delay: 0s;}    
+div.spinner div.bar2 {-webkit-transform:rotate(30deg) translate(0, -142%); -webkit-animation-delay: -0.9167s;}
+div.spinner div.bar3 {-webkit-transform:rotate(60deg) translate(0, -142%); -webkit-animation-delay: -0.833s;}
+div.spinner div.bar4 {-webkit-transform:rotate(90deg) translate(0, -142%); -webkit-animation-delay: -0.75s;}
+div.spinner div.bar5 {-webkit-transform:rotate(120deg) translate(0, -142%); -webkit-animation-delay: -0.667s;}
+div.spinner div.bar6 {-webkit-transform:rotate(150deg) translate(0, -142%); -webkit-animation-delay: -0.5833s;}
+div.spinner div.bar7 {-webkit-transform:rotate(180deg) translate(0, -142%); -webkit-animation-delay: -0.5s;}
+div.spinner div.bar8 {-webkit-transform:rotate(210deg) translate(0, -142%); -webkit-animation-delay: -0.41667s;}
+div.spinner div.bar9 {-webkit-transform:rotate(240deg) translate(0, -142%); -webkit-animation-delay: -0.333s;}
+div.spinner div.bar10 {-webkit-transform:rotate(270deg) translate(0, -142%); -webkit-animation-delay: -0.25s;}
+div.spinner div.bar11 {-webkit-transform:rotate(300deg) translate(0, -142%); -webkit-animation-delay: -0.1667s;}
+div.spinner div.bar12 {-webkit-transform:rotate(330deg) translate(0, -142%); -webkit-animation-delay: -0.0833s;}
+
+ @-webkit-keyframes fade {
+  from {opacity: 1;}
+  to {opacity: 0.25;}
+}
+
+#loading_msg {
+    display: inline-block;
+    display: none;
+    position: absolute;
+    top:0px;
+    left:40px;
+    -webkit-transform: translate(0px, -30px);
+    z-index:500;
+    background: white;
+    -webkit-border-bottom-right-radius: 7px;
+    -webkit-border-bottom-left-radius: 7px;
+    padding: 0px 3px 0px 3px;
+    border: 1px solid #ddd;
+    border-top-width:0;
+    -webkit-box-shadow: inset -1px -1px 1px rgba(50, 50, 50, 0.1);
+    -webkit-transition: all .3s ease-in-out 0s;
+    color: #666;
+    text-shadow: 1px 1px 1px rgba(50, 50, 50, .1);
+}
+
+#loading_msg.show {
+   -webkit-transform: translate(0px, 0px); 
+}

@@ -1,0 +1,1 @@
+require("script/test3.js");

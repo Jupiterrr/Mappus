@@ -1,0 +1,181 @@
+
+#datenliste {
+    list-style:none;
+    padding:0;
+    margin:0; 
+    position: relative;
+    font-family: Verdana, Arial, sans-serif;
+}
+#datenliste li.item {
+    cursor:pointer;
+}
+
+
+::selection {
+    background: transparent;
+}
+
+#datenliste .open_bar {
+    padding:4px 7px;
+    border-top:1px solid white;
+    border-bottom:1px solid #E2E2E2;
+    height: 29px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#datenliste .name {
+    display: block;
+    color: #282828;
+    line-height: 22pt;
+    font-size: 10pt;
+    white-space:nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+#datenliste .person_pic {
+    float: left;
+    border: 2px solid #fff;
+    background: #BBB;
+    margin-right: 7px;
+    border: 0px solid #BFC9DA;
+    
+}
+
+#datenliste .person_pic img {
+    -webkit-animation-name: fadein;
+    -webkit-animation-duration: .5s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-in;
+    
+}
+@-webkit-keyframes fadein {
+    from{ opacity: 0; }
+    to{ opacity: 1; }
+}
+
+#datenliste .person_pic, #datenliste .person_pic img {
+    width: 27px; 
+    height: 27px; 
+    border-radius: 3px;
+}
+
+#datenliste .detail {
+    font-size: 0px;
+    display: inline-block;
+}
+
+
+#datenliste .item.active .name {
+    line-height: 9pt;
+    line-height: 10pt;
+}
+
+#datenliste .item.active .detail {
+    font-size: 7pt;
+    /*-webkit-transition-delay: 0.3s;
+        -webkit-transition-property: all;*/
+}
+
+#datenliste .item .detail a {
+    cursor: pointer;
+}
+
+#datenliste .item .detail a:hover {
+    color: red;
+}
+
+
+
+
+#datenliste .item aside {
+    float: right;
+    margin-right: -10px;
+}
+
+#datenliste .open_bar:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+
+
+
+#datenliste .item img.loc {
+    width: 20px; margin-bottom:-4px;
+    margin-left:-2px;
+    opacity: 0.25;
+}
+#datenliste li.item:hover img.loc, #datenliste li.active img.loc {
+    width: 20px; margin-bottom:-4px;
+    margin-left:-2px;
+    opacity: 0.8;
+}
+#datenliste br {display:none;}
+/*
+#datenliste li:nth-child(odd){background:transparent;}
+#datenliste li:nth-child(even){background:#dcebf4;}
+
+*/
+#datenliste li.item:hover .open_bar {background:#FFF8E7;}
+
+#datenliste .item.active .open_bar{
+    background: #FFF8E7; 
+    border-bottom-color: white;   
+}
+
+
+#datenliste .item .adressen {
+    padding:0; margin:0;
+    list-style: none;
+    position: relative;
+    /*max-height: 0;*/
+    overflow: hidden;
+    /*-webkit-transition: max-height .5s ease-in-out 0s;*/
+    
+    background: #e3e3e3;
+    box-shadow: inset 0px 1px 3px rgba(50, 50, 50, .2);
+}
+
+
+#datenliste .item .adressen li {
+    height: 0;
+    -webkit-transition: all .2s ease-in-out 0s;
+    padding: 0px;
+    white-space:nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+#datenliste .adressen a {
+    text-decoration: none;
+    display: block;
+    padding: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-bottom: 1px solid #ccc;
+}
+
+#datenliste .adressen a:hover {
+    color: black;
+    background: #e5e5e5;
+}
+
+#datenliste .adressen li:last-child a {
+    border:0px;
+}
+
+
+#datenliste .item.active .adressen li {
+    height: 29px; 
+}
+
+
+
+#datenliste li ul.adressen li {
+    
+}

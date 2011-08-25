@@ -1,0 +1,58 @@
+html, body {
+    height: 100%; width: 100%;
+    margin: 0; padding: 0;
+    overflow: hidden;
+}
+
+#app_view {
+    position:absolute; 
+    height:100%; 
+    width:100%;
+
+    display: box;
+    display: -webkit-box;
+}
+
+#map_canvas {
+    -webkit-box-flex: 1;
+    height:100%; 
+    width: 400px;
+    /*margin-right:0px;*/ 
+    /*z-index:10;*/
+    z-index:10;
+}
+
+#aside {
+    z-index:9;
+    
+    width:300px; 
+    height:100%;
+    
+    background:#F2F3F4;
+    
+    -webkit-box-shadow: 5px 0px 15px 1px #666;
+    -moz-box-shadow: 5px 0px 15px 1px #666;
+    box-shadow: 5px 0px 15px 1px #666; 
+/*    display: -webkit-box;
+    display: -moz-box;
+    display: box;  
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    box-orient: vertical;
+*/
+    
+    display: box;
+    display: -webkit-box;
+    box-orient: vertical;
+    -webkit-box-orient: vertical;
+}
+
+
+#view1, #view2 {position:absolute; height:100%; width:100%;}
+
+
+#head_title span {
+    color: #6F60C6;
+    font-weight: bold;
+    text-shadow: #F6F6F6 1px 1px 0;
+}

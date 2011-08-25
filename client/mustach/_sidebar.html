@@ -1,0 +1,30 @@
+<!-- =========== -->
+<!-- = Sidebar = -->
+<!-- =========== -->
+
+<script id="sidebar.person.template" type="text/x-jquery-tmpl">
+  <li class="item">
+    <div class="open_bar">
+        <aside></aside>
+        <div class="person_pic"></div> <!-- <img alt="" src="{{picture}}" /> -->
+        <div class="name">{{name}}</div>
+        <div class="detail">
+          <a href="{{link}}" target="_blank">Facebook: Profil öffnen</a>
+        </div>
+        <div class="location_pics"></div>
+    </div>
+    <ul class="adressen slide"></ul>
+  </li>
+</script>
+
+<script id="sidebar.location.template" type="text/x-jquery-tmpl">
+  <li>
+    <a href="javascript:;">
+      {{location_name}}
+    </a>
+  </li>
+</script>
+
+<script id="sidebar.location_pics.template" type="text/x-jquery-tmpl">
+  <img alt="{{title}}" title="{{title}}" src="{{image}}" /> 
+</script>
