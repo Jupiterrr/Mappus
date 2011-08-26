@@ -1,0 +1,3 @@
+[submodule "Mappus-Server"]
+	path = Mappus-Server
+	url = git@github.com:Jupiterrr/Mappus-Server.git
